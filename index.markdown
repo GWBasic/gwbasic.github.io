@@ -4,3 +4,9 @@
 
 layout: home
 ---
+
+# Andrew Rondeau
+
+![Photo of me in front of a broken mirror](/assets/IMG_20181011_143541.jpg)
+
+Software developer, audio enthusiast. Former desktop client architect for [Syncplicity](https://syncplicity.com)
