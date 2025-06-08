@@ -1,4 +1,6 @@
 @charset "utf-8";
+@use "sass:color";
+@use "sass:meta";
 
 // Define defaults for each variable.
 
@@ -33,18 +35,55 @@ $on-laptop: 800px !default;
 //     padding-left: $spacing-unit / 2;
 //   }
 // }
-@mixin media-query($device) {
-  @media screen and (max-width: $device) {
-    @content;
-  }
-}
-
-@mixin relative-font-size($ratio) {
-  font-size: $base-font-size * $ratio;
-}
 
 // Import partials.
-@import "minima/base",
-"minima/layout",
-"minima/syntax-highlighting"
-;
+@include meta.load-css("minima/base", $with: ("base-font-family": $base-font-family,
+    "base-font-size": $base-font-size,
+    "base-font-weight": $base-font-weight,
+    "small-font-size": $small-font-size,
+    "base-line-height": $base-line-height,
+    "text-color": $text-color,
+    "background-color": $background-color,
+    "brand-color": $brand-color,
+    "grey-color": $grey-color,
+    "grey-color-light": $grey-color-light,
+    "grey-color-dark": $grey-color-dark,
+    "table-text-align": $table-text-align,
+    "content-width": $content-width,
+    "spacing-unit": $spacing-unit,
+    "on-palm": $on-palm,
+    "on-laptop": $on-laptop));
+
+@include meta.load-css("minima/layout", $with: ("base-font-family": $base-font-family,
+    "base-font-size": $base-font-size,
+    "base-font-weight": $base-font-weight,
+    "small-font-size": $small-font-size,
+    "base-line-height": $base-line-height,
+    "text-color": $text-color,
+    "background-color": $background-color,
+    "brand-color": $brand-color,
+    "grey-color": $grey-color,
+    "grey-color-light": $grey-color-light,
+    "grey-color-dark": $grey-color-dark,
+    "table-text-align": $table-text-align,
+    "content-width": $content-width,
+    "spacing-unit": $spacing-unit,
+    "on-palm": $on-palm,
+    "on-laptop": $on-laptop));
+
+@include meta.load-css("minima/syntax-highlighting", $with: ("base-font-family": $base-font-family,
+    "base-font-size": $base-font-size,
+    "base-font-weight": $base-font-weight,
+    "small-font-size": $small-font-size,
+    "base-line-height": $base-line-height,
+    "text-color": $text-color,
+    "background-color": $background-color,
+    "brand-color": $brand-color,
+    "grey-color": $grey-color,
+    "grey-color-light": $grey-color-light,
+    "grey-color-dark": $grey-color-dark,
+    "table-text-align": $table-text-align,
+    "content-width": $content-width,
+    "spacing-unit": $spacing-unit,
+    "on-palm": $on-palm,
+    "on-laptop": $on-laptop));

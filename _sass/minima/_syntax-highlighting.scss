@@ -1,3 +1,33 @@
+@use "sass:color";
+@use "sass:meta";
+
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+
+$base-font-family: 0 !default;
+$base-font-size: 0 !default;
+$base-font-weight: 0 !default;
+$small-font-size: 0 !default;
+$base-line-height: 0 !default;
+$spacing-unit: 0 !default;
+$text-color: 0 !default;
+$background-color: 0 !default;
+$brand-color: 0 !default;
+$grey-color: 0 !default;
+$grey-color-light: 0 !default;
+$grey-color-dark: 0 !default;
+$table-text-align: 0 !default;
+$content-width: 0 !default;
+$on-palm: 0 !default;
+$on-laptop: 0 !default;
+
 /**
  * Syntax highlighting styles
  */
