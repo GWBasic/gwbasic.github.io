@@ -6,8 +6,7 @@ categories: software careers Startup
 ---
 I’ve talked to a lot of people who really need a technical co-founder. Unfortunately, people who have a grand idea, but can’t do the programming or engineering, are a dime a dozen.
 
-Are You a Clown? Do You Have a Good Idea and Understand the Risks?
-------------------------------------------------------------------
+## Are You a Clown? Do You Have a Good Idea and Understand the Risks?
 
 So let's say we've met, talked for an hour, what goes through my head? I’m trying to figure out if you’re a clown, whose idea is so grand that it’s biggest value is entertainment and laughs. Most people who I talk to, unfortunately, are clowns! Don’t feel bad if you realize that you’re just clowning around instead of building a sustainable technology business. Every successful entrepreneur has been a clown at one point or another. I certainly have. I’m sure you don’t have to think very hard to find examples of Steve Jobs, Bill Gates, Mark Zuckerberg, Elon musk, or Jack Dorsey being a clown.
 
@@ -15,8 +14,7 @@ Why would I think you’re a clown? Maybe you are trying to build a business tha
 
 I hope you realize that the odds are against you. All high-tech startups are, at some point, an odds game. Unfortunately, it’s difficult to know the odds going in, but if you don’t seem to have a good understanding of the odds: you’re a clown. An important part of running a high tech startup is managing your risk to keep the odds in your favor.
 
-Will You Expect Me To Work For Sweat Equity Only?
--------------------------------------------------
+## Will You Expect Me To Work For Sweat Equity Only?
 
 So now let’s assume that I’ve decided you’re not a clown: Your idea is solid, you’re a reasonable person, (IE, you’re not building a submarine with a carbon-fiber hull,) and you understand how to manage your risk. The next thing that I’m going to look for is, is your idea interesting to me? If it’s not, don’t feel bad. There’s a lot of high-tech startups that just have no appeal to me whatsoever, but probably could be very successful.
 
@@ -28,8 +26,7 @@ But I know the startup game, I know that it is very difficult, or impossible, to
 
 I have quit my job before to try and run a company, so I know what it’s like to chase my dream on no income. I have no intention of chasing *your* dream. That's why I bluff about the money. It's a control thing. Specifically, it’s about your control about what we are building.
 
-Will You Be Willing to Give Me Creative Control in Return for my Sweat Equity?
-------------------------------------------------------------------------
+## Will You Be Willing to Give Me Creative Control in Return for my Sweat Equity?
 
 If you want me to quit my job, to be a technical co-founder, you need to be extremely flexible about what we’re building! One thing that I’ve encountered over and over is that someone is so rigid in what they are trying to build, that it will only work out if it’s an employer employee relationship. In that situation, I will happily take whatever title you want to give me and do my best to build whatever you want! After all I’m getting paid! As long as the money lasts for a few years, I’m willing to take a chance on you.
 
@@ -41,8 +38,7 @@ Why? Engineering is always about compromises.
 
 I will probably compromise the product based on my comfort level about working with certain technologies. You might think, “oh well, I’m going to keep looking until I can find someone who is going to build every detail exactly to my specification, purely for equity.” You might get lucky, but I think you will miss your market window before you find such a person. I encourage you to compromise your dreams with pragmatism and let me riff on your ideas: An MVP is always a compromise.
 
-Can We Trust Each Other Enough to Collaborate Versus Fight for Control?
------------------------------------------------------------------------
+## Can We Trust Each Other Enough to Collaborate Versus Fight for Control?
 
 We need to be able to develop a great rapport where I trust that you to do your part in building a great company. It’s more than you being an awesome salesman or an awesome procurement person, or awesome marketing. The only way we can build this rapport is by spending time together; where I can figure out how to build something that balances:
 
