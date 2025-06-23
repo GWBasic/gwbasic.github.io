@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Comment on an older article about DVD-audio"
-date:   2003-04
+date:   2003-04-04
 ---
 This is an old response to an article:
 
