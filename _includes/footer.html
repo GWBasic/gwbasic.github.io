@@ -1,5 +1,5 @@
 <footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+  <data class="u-url" href="{{ " /" | relative_url }}"></data>
 
   <div class="wrapper">
 
@@ -10,19 +10,17 @@
         <ul class="contact-list">
           <li class="p-name">
             {%- if site.author -%}
-              {{ site.author | escape }}
+            {{ site.author | escape }}
             {%- else -%}
-              {{ site.title | escape }}
+            {{ site.title | escape }}
             {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
+          </li>
+          <li><a id="hydfdhf" class="u-email""></a></li>
         </ul>
       </div>
 
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
+      <div class=" footer-col footer-col-2">
+              {%- include social.html -%}
       </div>
 
       <div class="footer-col footer-col-3">
@@ -33,3 +31,12 @@
   </div>
 
 </footer>
+
+<script>
+  var emailLinkElement = document.getElementById("hydfdhf");
+  var email = "andrewrondeau";
+  email += ".com";
+  email = "web" + "@" + email;
+  emailLinkElement.setAttribute("href", "mailto:" + email);
+  emailLinkElement.textContent = email;
+</script>
