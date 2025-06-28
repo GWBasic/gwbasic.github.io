@@ -1,3 +1,3 @@
-I'm currently experimenting with moving my site to Github Pages managed by Jekyll
+# Andrew Rondeau's blog
 
-Please visit [my webpage](https://andrewrondeau.com)
+This is the github repo that backs my blog, available at [https://blog.andrewrondeau.com/](https://blog.andrewrondeau.com/)
