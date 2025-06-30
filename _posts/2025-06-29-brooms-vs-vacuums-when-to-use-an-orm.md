@@ -60,6 +60,16 @@ We do have some older code, written by junior programmers, that is sensitive to 
 
 In contrast to OptiRTC, a few years ago, one weekend I quickly made a proof-of-concept web application with a database. It had one or two tables, and a few queries. I believed that it would take me more time to set up Entity Framework than to just write queries by hand, so that's what I did. Nothing ever came out of the weekend proof-of-concept; but if it did turn into a larger project, I would have included Entity Framework.
 
+## It's not hard to write SQL queries by hand...
+
+... it's just time consuming to construct and populate your data structures!
+
+SQL is a very simple language: Any competent programmer can learn to write basic CRUD queries. Joins and aggregations are also techniques that any competent programmer can learn. Writing the corresponding data structures and population logic that uses a data reader is also basic programming; any programmer who can solve [Fizzbuzz](https://en.wikipedia.org/wiki/Fizz_buzz#Programming) or pass a basic data structures class should be able to do this.
+
+The issue is that this is time consuming code to write! Using Entity Framework, I can write a query with complicated joins, and get back fully-populated objects, in a matter of minutes. A query with complicated joins, when written by hand, and when the objects are populated by hand, can take hours, if not longer, to implement.
+
+The difference is in optimization, debugging, and working around bugs in 3rd party libraries. Much like how a vacuum can malfunction in ways that a broom never will, an ORM can malfunction in ways that hand-written SQL and hand-written object population code will never malfunction. When implementing a complicated application with lots of tables, relationships, and queries, an ORM will save significant time. In contrast, using a broom, IE, writing queries by hand, is mostly only "worth it" when setting up and learning to use the ORM correctly takes more time than writing the query, or for queries with significant performance needs.
+
 ## When using a database, do you need a broom or a vacuum?
 
 I think the best way to make this decision is to break the kind of database use into three categories:
