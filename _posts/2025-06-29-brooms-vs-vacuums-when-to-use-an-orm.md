@@ -10,7 +10,7 @@ One rather frustrating topic issue that I've encountered as a software engineer 
 To summarize the tradeoffs:
 
 - **Hand-written SQL and manual creation of objects**: This approach can get quite time-consuming and tedious. It also might require learning arcane database syntax, or significant rewrites if the database vendor changes. In contrast, hand-written queries normally run faster than queries from an ORM, and the application will use less CPU and RAM.
-- **ORM**: Often, it is much faster (developer time) to use an ORM, but getting high performance can require tedious optimization or learning many more details about the ORM than the actual database. Often, if the database vendor changes, the ORM can adapt to a new database with minimal changes to application queries or mappings. Introducing an ORM to a project with a very simple schema may be more time consuming than writing queries by hand.
+- **ORM**: Often, it is much faster (developer time) to use an ORM, but getting high performance can require tedious optimization or learning many more details about the ORM than the actual database. Often, if the database vendor changes, the ORM can adapt to a new database with minimal changes to application queries or mappings. Introducing an ORM to a project with a very simple schema may be more time consuming than writing queries by hand, due to complications importing 3rd party dependencies.
 
 The best way to think through the tradeoffs is to ask yourself: Do you need a broom or a vacuum?
 
@@ -43,9 +43,9 @@ Choosing to write your own queries by hand, or using an ORM, simply requires und
 
 <img src="/assets/posts/2025-06-29-brooms-vs-vacuums-when-to-use-an-orm/bellcurve.png" alt="Bell curve about when to use an ORM vs hand SQL" width="512" height="512">
 
-When I worked at [Syncplicity](https://www.syncplicity.com/), we decided to refactor the desktop client to use [SQLite](https://sqlite.org/) without an ORM. Initially, this decision was mildly controversial: When I joined the company, it used a very early version of [NHibernate](https://nhibernate.info/); but it performed poorly because it used NHibernate incorrectly.
+When I worked at [Syncplicity](https://www.syncplicity.com/), we decided to refactor the desktop client to use [SQLite](https://sqlite.org/) without an ORM. Initially, this decision was mildly controversial: When I joined the company, the desktop client used a very early version of [NHibernate](https://nhibernate.info/); but it performed poorly because it used NHibernate incorrectly.
 
-I pointed out to my team members two important facts:
+I pointed out to my team members some important facts:
 
 - We had so few tables in our schema, and so few queries, that learning to use NHibernate correctly would take more time then just writing some queries by hand.
 - All newcomers to our team would need to invest time in learning how to use NHibernate
@@ -81,7 +81,7 @@ The difference is in optimization, debugging, and working around bugs in 3rd par
 
 When deciding between an ORM or hand-written queries, I like to think of three categories:
 
-1. **Broom because of simplicity**: The database has few tables and simple query needs. Skip the ORM because I'll never "break even" on the time it takes to set it up and learn how to use it correctly.
+1. **Broom because of simplicity**: The database has few tables and simple query needs. I will skip the ORM because I'll never "break even" on the time it takes to set it up and learn how to use it correctly.
 2. **Vacuum because of breadth**: The database had many tables and queries. I will "break even" on the time it takes to pick an ORM, set it up, learn how to use it correctly, work around its bugs, react to its security vulnerabilities, and defend its license to the company's legal team.
 3. **Archeologist's paintbrush because of specialization**: The application has "hot" queries, is performance sensitive, or otherwise needs every kind of performance boost it can get. In this case, it's "worth it" to invest the time and or manpower into hand-writing optimized queries and code to populate objects.
 
